@@ -44,7 +44,7 @@ const Hero = () => {
       {/* Overlay */}
       <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]' />
       <div className='p-5 text-white z-[2] text-center'>
-        <h2 className='text-8xl font-bold font-lobster mb-5 mt-8'>Thư viện thông tin</h2>
+        <h2 className='text-8xl font-bold font-lobster mb-5 mt-10'>Thư viện thông tin</h2>
         <p className='py-5 text-2xl mb-10 font-medium font-patrick'>Cung cấp thông tin, trang bị định hướng, làm chủ con đường, vững bước tương lai.</p>
         <Link href="/">
           <button type="button" className="px-8 py-2 text-white tracking-wide font-patrick bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-2xl text-center me-2 mb-2">Khám phá ngay</button>

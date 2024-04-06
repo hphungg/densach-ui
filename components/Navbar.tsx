@@ -22,17 +22,17 @@ const navItems: NavItem[] = [
             {
                 label: "Lớp 10",
                 link: "/",
-                icon: ""
+                icon: "/number-10.svg"
             },
             {
                 label: "Lớp 11",
                 link: "/",
-                icon: ""
+                icon: "/number-11.svg"
             },
             {
                 label: "Lớp 12",
                 link: "/",
-                icon: ""
+                icon: "/number-12.svg"
             },
         ]
     },
@@ -91,19 +91,19 @@ const Navbar = () => {
                                 </div>
 
                                 {d.children && (
-                                    <div className="absolute right-0 top-[70px] hidden w-auto flex-col gap-1 rounded-lg bg-white py-3 shadow-md transition-all group-hover:flex ">
+                                    <div className="absolute top-[70px] hidden w-auto flex-col gap-1 rounded-lg bg-white py-3 shadow-md transition-all group-hover:flex ">
                                         {d.children.map((ch, i) => (
                                             <Link
                                                 key={i}
                                                 href={ch.link ?? "#"}
-                                                className="text-[#639CF3] flex cursor-pointer items-center py-1 pl-6 pr-8 hover:text-[#639CF3]"
+                                                className="text-[#639CF3] flex cursor-pointer items-center py-1 pl-1 pr-5 hover:text-[#639CF3]"
                                             >
                                                 {/* image */}
                                                 {ch.icon && (
-                                                    <Image src={ch.icon} alt="item-icon" width={0} height={0} />
+                                                    <Image src={ch.icon} alt="item-icon" width={30} height={30} />
                                                 )}
                                                 {/* item */}
-                                                <span className="whitespace-nowrap pl-3 ">
+                                                <span className="whitespace-nowrap pl-3 justify-center">
                                                     {ch.label}
                                                 </span>
                                             </Link>
@@ -119,7 +119,10 @@ const Navbar = () => {
                     <Image src='/logo.webp' alt='' width={100} height={100} />
                 </Link>
 
-                <button type="button" className="hidden sm:flex px-4 py-2 tracking-wide text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-bold rounded-lg text-lg text-center ml-[140px]">Đăng nhập ngay</button>
+                <Link href='/'>
+                    <button type="button" className="hidden sm:flex px-4 py-2 tracking-wide text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-bold rounded-lg text-lg text-center ml-[140px]">Đăng nhập</button>
+                </Link>
+
 
                 {/* Mobile Button */}
                 <div onClick={handleNav} className='block sm:hidden z-10'>
@@ -148,7 +151,7 @@ const Navbar = () => {
                             <Link href='/'>Môn học</Link>
                         </li>
                         <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/'>Đăng nhập ngay</Link>
+                            <Link href='/'>Đăng nhập</Link>
                         </li>
                     </ul>
                 </div>

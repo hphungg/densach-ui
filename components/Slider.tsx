@@ -28,7 +28,7 @@ const Slider = () => {
 
     return (
         <div className='max-w-[1240px] mx-auto'>
-            <h1 className='text-6xl font-bold text-center p-[50px]'>Phần bài viết nha</h1>
+            <h1 className='text-6xl font-bold text-center p-[50px] font-lobster'>Phần bài viết nha</h1>
             <p className='text-xl font-medium text-center pb-[50px]'>Cái này để tạm thời vậy thui chứ thực ra là thay bằng phần bài viết bên kia.</p>
             <div className='relative flex justify-center p-4'>
                 {
